@@ -1,7 +1,7 @@
 const Benchmark = require('benchmark')
 const m = require('.')
 const p = require('dot-prop')
-let suite = new Benchmark.Suite()
+const suite = new Benchmark.Suite()
 
 function compareDirect (benchArray, suiteName) {
   const getCompared = benchArray.filter(item => item.name.includes(suiteName)).sort(function (a, b) {
@@ -267,4 +267,4 @@ suite.add('opt.get', function () {
     console.log(compareDirect(this, '.has'))
   })
   // run async
-  .run({ 'async': true })
+  .run({ async: true })

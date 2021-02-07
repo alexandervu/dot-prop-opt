@@ -1,6 +1,6 @@
 const Benchmark = require('benchmark')
 const m = require('.')
-let suite = new Benchmark.Suite()
+const suite = new Benchmark.Suite()
 
 // add tests
 suite.add('Get', function () {
@@ -129,4 +129,4 @@ suite.add('Get', function () {
     console.log('Finish')
   })
   // run async
-  .run({ 'async': true })
+  .run({ async: true })
