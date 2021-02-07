@@ -14,7 +14,7 @@ module.exports = {
 
     return path.split('.').reduce(
       (data, property) => {
-        if (data && data.hasOwnProperty(property)) {
+        if (data && Object.prototype.hasOwnProperty.call(data, property)) {
           return data[property]
         }
 
@@ -75,7 +75,7 @@ module.exports = {
 
     return path.split('.').reduce(
       (data, property, currentIndex, currentArray) => {
-        if (data && data.hasOwnProperty(property)) {
+        if (data && Object.prototype.hasOwnProperty.call(data, property)) {
           return currentArray.length === (currentIndex + 1) ? true : data[property]
         }
 
