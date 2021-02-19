@@ -1,6 +1,6 @@
 {
   "name": "dot-prop-opt",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Modify nested object properties using a dot path. Package is runtime optimized.",
   "main": "index.js",
   "files": [
