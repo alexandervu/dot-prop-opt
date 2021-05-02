@@ -1,6 +1,6 @@
 {
   "name": "dot-prop-opt",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Modify nested object properties using a dot path. Package is runtime optimized.",
   "main": "index.js",
   "files": [
@@ -67,6 +67,6 @@
     "collectCoverage": true
   },
   "dependencies": {
-    "is-obj": "^2.0.0"
+    "is-obj": "^3.0.0"
   }
 }
